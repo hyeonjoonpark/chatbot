@@ -8,4 +8,7 @@
 ### streamlit (import streamlit as st)
 ###           (from streamlit_chat import message)
 
+```streamlit 홈페이지```
+[https://streamlit.io/]
+
 ### ```데이터 파일 = 챗봇.csv```
