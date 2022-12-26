@@ -7,3 +7,5 @@
 ### sklearn.metrics.pairwise (from sklearn.metrics.pariwise import cosine_similarity)
 ### streamlit (import streamlit as st)
 ###           (from streamlit_chat import message)
+
+##```데이터 파일 = 챗봇.csv```
