@@ -2,7 +2,8 @@
 
 ## ```사용언어``` : python
 ## ```사용 라이브러리```
-### pandas
-### sentence_transformers
-### sklearn.metrics.pairwise
-### streamlit
+### pandas (import pandas as pd)
+### sentence_transformers (from sentence_transformers import SentenceTransformer)
+### sklearn.metrics.pairwise (from sklearn.metrics.pariwise import cosine_similarity)
+### streamlit (import streamlit as st)
+###           (from streamlit_chat import message)
