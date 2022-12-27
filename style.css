@@ -1,0 +1,16 @@
+html {
+    background-color: black;
+}
+span {
+    color: red;
+}
+
+p {
+    color: red;
+    border: red solid 1px;
+}
+
+.msg-info {
+    color: blue;
+    border: lightblue solid 1px;
+}
