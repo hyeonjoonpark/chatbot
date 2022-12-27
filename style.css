@@ -1,16 +1,50 @@
-html {
-    background-color: black;
-}
 span {
-    color: red;
+    color: white;
+    font-size: 30px;
 }
 
 p {
-    color: red;
-    border: red solid 1px;
+    color: white;
+    border: transparent solid 1px;
+    font-style: bold;
+    text-align: center;
+    font-size: 15px;
 }
 
 .msg-info {
-    color: blue;
-    border: lightblue solid 1px;
+    color: black;
+    border: transparent solid 1px;
+    background-color: white;
+    display: block;
+    float: left;
 }
+
+h2 {
+    color: white;
+    margin-top:30px;
+}
+
+.block-container {
+    background-image: url("./images/background.jpg");
+    text-align: center;
+
+}
+
+
+button p{
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+.css-2ykyy6.egzxvld0 {
+    background-color: white;
+    color:black;
+}
+
+.css-z3au9t.egzxvld1 {
+    color: black;
+}
+
