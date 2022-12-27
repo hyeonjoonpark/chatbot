@@ -24,11 +24,11 @@ h2 {
     margin-top:30px;
 }
 
-.block-container {
+/* .block-container {
     background-image: url("./images/background.jpg");
-    text-align: center;
+    /* text-align: center; 
 
-}
+} */ 
 
 
 button p{
@@ -47,4 +47,6 @@ h1 {
 .css-z3au9t.egzxvld1 {
     color: black;
 }
-
+/* .css-1p05t8e.epcbefy1 {
+    height: 300px;
+} */
