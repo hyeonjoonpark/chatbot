@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 import streamlit as st
 from streamlit_chat import message
@@ -9,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 st.set_page_config(layout = "wide")
 
 
-tab1, tab2, tab3 = st.tabs(["학교소개", "입학안내", "문의"])
+tab1, tab2, tab3, tab4= st.tabs(["학교소개", "입학안내", "문의", "챗봇 주의사항"])
 
 with tab1 :
     st.markdown(
@@ -30,8 +31,16 @@ with tab2 :
 with tab3 :
     st.markdown(
     """
-        챗봇한테 굳이 물어보지 마라
+        문의하러 가기 : 051 - 971- 2153
     """
+    )
+
+with tab4 :
+    st.markdown(
+        """
+            주의사항 : 챗봇이 질문을 이해 잘 못할 수도 있습니다.
+                     답을 얻지 못하면 옆에 문의하기를 눌러서 문의해주시기 바랍니다.
+        """
     )
 
 
@@ -77,17 +86,16 @@ if submitted and user_input:
     answer = df.loc[df['distance'].idxmax()]
 
     st.session_state.past.append(user_input)
-    if answer['distance'] > 0.6 :
+    if answer['distance'] > 0.7 :
         st.session_state.generated.append(answer['챗봇'])
     else:
-        st.session_state.generated.append('자세한 상황은 051 - 971- 2153으로 연락 바랍니다.')
+        st.session_state.generated.append('이해를 하지 못했어요. 문의를 할려면 위쪽 상단에 문의를 눌러주시기 바랍니다.')
 
 
 for i in range(len(st.session_state['past'])):
     # message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
     # if len(st.session_state['generated']) > i:
     #     message(st.session_state['generated'][i], key=str(i) + '_bot')
-
 
     st.markdown(
         """
