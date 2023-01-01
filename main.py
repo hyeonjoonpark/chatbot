@@ -85,7 +85,7 @@ if submitted and user_input:
     answer = df.loc[df['distance'].idxmax()]
 
     st.session_state.past.append(user_input)
-    if answer['distance'] > 0.7 :
+    if answer['distance'] > 0.5 :
         st.session_state.generated.append(answer['챗봇'])
     else:
         st.session_state.generated.append('이해를 하지 못했어요. 문의를 할려면 위쪽 상단에 문의를 눌러주시기 바랍니다.')
