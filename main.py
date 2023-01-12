@@ -138,7 +138,7 @@ st.sidebar.info(
     """
         [BSM](https://bssm.kro.kr/)
         [BSMboo](https://bsmboo.kro.kr/)
-        [BumaWiki] (http://bumawiki.kro.kr/)
+        [BumaWiki](http://bumawiki.kro.kr/)
     """
 )
 
